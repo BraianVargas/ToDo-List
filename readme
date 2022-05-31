@@ -1,0 +1,19 @@
+# EJECUTAR LOS SIGUIENTES COMANDOS EN CONSOLA CMD
+
+cd todoer
+pip install virtualenv 
+virtualenv venv
+cd venv\Scripts
+activate.bat
+cd.. 
+cd..
+cd todo
+activate.bat
+pip install flask mysql-connector-python werkzeug click
+
+set FLASK_DATABASE_HOST='localhost'
+set FLASK_DATABASE_USER='root'
+set FLASK_ENV=development
+set FLASK_DATABASE_PASSWORD=''
+set FLASK_DATABASE='todo'
+set FLASK_APP=__init__.py
