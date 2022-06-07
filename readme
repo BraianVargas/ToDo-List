@@ -11,9 +11,9 @@ cd todo
 activate.bat
 pip install flask mysql-connector-python werkzeug click
 
-set FLASK_DATABASE_HOST='localhost'
+set FLASK_DATABASE_HOST=localhost
 set FLASK_DATABASE_USER='root'
 set FLASK_ENV=development
-set FLASK_DATABASE_PASSWORD=''
-set FLASK_DATABASE='todo'
-set FLASK_APP=__init__.py
+set FLASK_DATABASE_PASSWORD=
+set FLASK_DATABASE=todo
+set FLASK_APP=todo

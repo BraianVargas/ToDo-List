@@ -8,17 +8,18 @@ instructions = [
         id INT PRIMARY KEY AUTO_INCREMENT,
         username VARCHAR(50) UNIQUE NOT NULL,
         password VARCHAR(255) NOT NULL
+        );
     """,
     """
     CREATE TABLE todo (
         id INT PRIMARY KEY AUTO_INCREMENT,
         created_by INT NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-        title VARCHAR(255) NOT NULL,
-        description VARCHAR(255) NOT NULL,
-        completed BOOLEAN DEFAULT FALSE NOT NULL,
+        title TEXT NOT NULL,
+        description TEXT NOT NULL,
+        completed BOOLEAN NOT NULL,
         FOREIGN KEY (created_by) REFERENCES user(id)
-    )
+    );
     """
 
 ]
